@@ -62,8 +62,8 @@ hr {
    color: #50B6B9;
    height: 2px;
 }
-wrapper > hr {
-    width: 50%;
+.wrapper > hr {
+   width: 50%;
    margin: 3em auto 1em;
 }
 mark { background: #FF0; color: #000; }
