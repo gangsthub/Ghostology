@@ -33,14 +33,14 @@ audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
 html {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 body {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	font-size: 16px;
-	margin: 0;
+    font-family: 'robotolight', sans-serif;
+
+    font-size: 16px;
+    margin: 0;
     border-color: #bdbdbd;
 }
 a { background: transparent; }
@@ -127,12 +127,11 @@ table { border-collapse: collapse; border-spacing: 0; }
     transition: all 400ms ease;
 }
 #intro .down:hover{
-	background: url('../images/down.png') 0 10px no-repeat
+    background: url('../images/down.png') 0 10px no-repeat
 }
 
 #intro .container.visible{
     opacity: 1;
-    margin-top: -350px;
 }
 
 #intro .down.visible{
@@ -153,57 +152,61 @@ blockquote {
    2. General - Setting up some base styles
    ========================================================================== */
 
+.simplecentered {
+    margin: 0 auto;
+}
+
 #push{
-	width: 100%;
-	min-height: 100%;
-	padding: 50px 0;
-	position: relative;
-	z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    padding: 50px 0;
+    position: relative;
+    z-index: -1;
 }
 #intro {
-	color: #FFF;
-	text-align: center;
-	background: #50B6B9;
-	position: fixed;
-	top: 0;
+    color: #FFF;
+    text-align: center;
+    background: #50B6B9;
+    position: fixed;
+    top: 0;
 }
 #intro .container h1{
-	font-size: 48px;
-	font-weight: 200;
-	margin: 30px 0;
+    font-size: 48px;
+
+    font-family: 'robotolight';
+    margin: 30px 0;
 }
 #intro .container h2{
-	font-size: 18px;
-	font-weight: 200;
+    font-size: 18px;
+
+    font-family: 'robotolight';
 }
 @media (max-width: 641px) {
-	#intro .container h1{
-		font-size: 36px;
+    #intro .container h1{
+        font-size: 36px;
         text-indent: -25px;
-	}
-	#intro .container h2{
-		font-size: 14px;
-	}
+    }
+    #intro .container h2{
+        font-size: 14px;
+    }
 }
 h2.title{
     margin-top: 60px !important;
     margin-bottom: 15px !important;
 }
 a, a:hover{
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 a.link, a.link:hover{
-	color: #50B6B9;
+    color: #50B6B9;
 }
 #intro .container{
     width: 400px;
     position: absolute;
     padding: 0;
-    top: 44%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -200px;
+    top: 16.7%;
+    left: 33%;
     opacity: 0;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -221,7 +224,8 @@ a.link, a.link:hover{
 .post-footer{
 }
 h3{
-	font-weight: 200;
+
+    font-family: 'robotolight';
 }
 
 #what p {
@@ -485,16 +489,15 @@ h3{
     transition: all 0.1s ease;
 }
 
-/* Add a border to the buttons on hover */
 .back-button:hover,
 .subscribe-button:hover {
     border-color: #bfc8cd;
     color: #9EABB3;
 }
 
-/* The details of your blog. Defined in ghost/settings/ */
 .container-title {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,.75);
 }
 
 @media (max-width: 641px) {
@@ -502,7 +505,7 @@ h3{
         background-color: transparent;
     }
     #intro .container h2 {
-      font-weight: 600;
+      font-family: 'robotomedium', sans-serif;
       color: black;
     }
 }
@@ -512,7 +515,7 @@ h3{
 .page-title {
     margin: 10px 0 10px 0;
     font-size: 5rem;
-    font-weight: 200;
+    font-family: 'robotolight';
     color: #fff;
 }
 
@@ -520,7 +523,7 @@ h3{
     margin: 0;
     font-size: 2rem;
     line-height: 1.5em;
-    font-weight: 200;
+    font-family: 'robotolight';
     color: #fff;
 }
 
@@ -613,21 +616,21 @@ body:not(.post-template) .post-title {
 }
 
 .author-thumb {
-	display: block;
-	width: 12.5%;
-	vertical-align: top;
-	margin: 0 auto;
-	-webkit-border-radius:60px;
-	-moz-border-radius:60px;
-	border-radius:60px;
-	margin-top:-150px;
+    display: block;
+    width: 12.5%;
+    vertical-align: top;
+    margin: 0 auto;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+    margin-top:-150px;
 }
 .author-info{
-	display: inline-block;
-	width: 60%;
-	vertical-align: top;
-	margin-left: 1rem;
-	padding: 2rem;
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    margin-left: 1rem;
+    padding: 2rem;
 }
 
 .post-meta a {
@@ -693,26 +696,27 @@ body:not(.post-template) .post-title {
 }
 
 .box{
-	font-weight: 200;
-	background: #FFF;
-	color: #AAA;
-	padding: 6rem 0 0;
-	margin-bottom: 2rem;
-	text-align: center;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 100ms linear;
-	-moz-transition: all 100ms linear;
-	-ms-transition: all 100ms linear;
-	transition: all 100ms linear;
+
+    font-family: 'robotolight';
+    background: #FFF;
+    color: #AAA;
+    padding: 6rem 0 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
 }
 .box:hover{
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 section{
-	width: 100%;
-	min-height: 100%;
-	padding: 5rem 0;
-	position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 5rem 0;
+    position: relative;
 }
 
 /* ==========================================================================
@@ -720,22 +724,22 @@ section{
    ========================================================================== */
 
 input{
-	display: inline-block;
-	margin: 0 5px;
-	border: none;
-	border: 1px solid #DDD;
-	padding: 10px;
-	font-size: 16px;
-	font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin: 0 5px;
+    border: none;
+    border: 1px solid #DDD;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'robotolight', sans-serif;
 }
 section.share i{
-	font-size: 3rem;
+    font-size: 3rem;
 }
 /* ==========================================================================
    6. Author profile
    ========================================================================== */
 .author-header{
-	padding: 2rem;
+    padding: 2rem;
 }
 /* ==========================================================================
    7. Third Party Elements - Embeds from other services
@@ -760,13 +764,13 @@ section.share i{
    ========================================================================== */
 
 footer{
-	color: #FFF;
-	background: #50B6B9;
-	text-align: left;
-	width: 100%;
-	padding: 30px 0;
-	font-weight: 600;
-	position: relative;
+    color: #FFF;
+    background: #50B6B9;
+    text-align: left;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'robotomedium', sans-serif;
+    position: relative;
 }
 
 /* ==========================================================================

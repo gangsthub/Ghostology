@@ -6,10 +6,12 @@ section{
 }
 strong{
 	font-weight: 200;
+	font-family: 'robotolight';
 }
 h1.title{
 	font-size: 36px;
 	font-weight: 200;
+	font-family: 'robotolight';
 	margin-bottom: 60px !important;
 	color: #00bcd4;
 	text-align: center;
@@ -18,12 +20,14 @@ h1.title{
 h2.title {
 	font-size: 36px;
 	font-weight: 200;
+	font-family: 'robotolight';
 	margin-bottom: 60px !important;
 	color: #00bcd4;
 	text-align: center;
 }
 h3{
-	font-weight: 600;
+	font-weight: 500;
+	font-family: 'robotomedium', sans-serif;
 	font-size: 24px;
 	margin-bottom: 20px;
 }
@@ -85,7 +89,8 @@ h3{
 	line-height: 70px;
 	padding: 0 10px;
 	color:#00bcd4;
-	font-weight: 600;
+	font-weight: 500;
+	font-family: 'robotomedium', sans-serif;
 	cursor: pointer;
 }
 @media (max-width: 641px) {
@@ -132,7 +137,8 @@ h3{
 	display: block;
 }
 #feed p a{
-	font-weight: 600;
+	font-weight: 500;
+	font-family: 'robotomedium', sans-serif;
 }
 /*/ --- FAQ --- /*/
 #faq{
@@ -165,7 +171,7 @@ section#newsletter{
 	border: 1px solid #DDD;
 	padding: 10px;
 	font-size: 16px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'robotolight', sans-serif;
 }
 #newsletter input[type='text']{
 	width: 350px;
@@ -202,6 +208,7 @@ section#newsletter{
 .box.dialog h3{
 	font-size: 36px;
 	font-weight: 200;
+	font-family: 'robotolight';
 	color: #00bcd4;
 }
 .overlay{
