@@ -62,7 +62,7 @@ hr {
 }
 mark { background: #FF0; color: #000; }
 code, kbd, pre,
-samp { font-family: monospace, serif; font-size: 1em; }
+samp { font-family: monospace, serif; font-size: 1em; text-align: left}
 pre { white-space: pre-wrap; }
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 small { font-size: 80%; }
@@ -75,6 +75,7 @@ sub, sup {
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 img { border: 0; }
+.post-content img {  margin: 1em auto; display: block;  }
 svg:not(:root) { overflow: hidden; }
 figure { margin: 0; }
 fieldset {
@@ -152,34 +153,28 @@ blockquote {
    2. General - Setting up some base styles
    ========================================================================== */
 
-.simplecentered {
-    margin: 0 auto;
+@media (min-width: 641px) {
+    .simplecentered {
+        margin: 0 auto;
+        width: auto;
+    }
+    .simplecentered > header, .simplecentered > section , .simplecentered > footer {
+        max-width: 75%;
+        margin: auto;
+    }
 }
 
-#push{
-    width: 100%;
-    min-height: 100%;
-    padding: 50px 0;
-    position: relative;
-    z-index: -1;
-}
-#intro {
-    color: #FFF;
-    text-align: center;
-    background: #50B6B9;
-    position: fixed;
-    top: 0;
-}
+
 #intro .container h1{
     font-size: 48px;
-
-    font-family: 'robotolight';
+    font-family: 'robotolight', sans-serif;
+    font-weight: 300;
     margin: 30px 0;
 }
 #intro .container h2{
     font-size: 18px;
-
-    font-family: 'robotolight';
+    font-family: 'robotolight', sans-serif;
+    font-weight: 300;
 }
 @media (max-width: 641px) {
     #intro .container h1{
