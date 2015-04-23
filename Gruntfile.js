@@ -29,10 +29,13 @@ module.exports = function(grunt) {
 
     watch: {
       css: {
-        files: ['assets/css/*.css'],
+        files: [
+          'assets/css/blog.css',
+          'assets/css/style.css',
+          'assets/css/reset.css'
+        ],
         tasks: ['cssmin'],
         options: {
-          reload: true,
           livereload: true
         },
       },
