@@ -3,7 +3,7 @@
     {{! This is the post loop - each post will be output using this markup }}
     {{#foreach posts}}
     <div class="row">
-        <div class="columns large-12">
+        <div class="columns large-9 simplecentered">
             <header><h2 class="title"><a class="link" href="{{url}}">{{{title}}}</a></h2></header>
 
             <section class="post-excerpt">
@@ -14,22 +14,22 @@
             {{#author}}
 
             <footer class="post-footer box">
-                {{#if image}}
-                    <img class="author-thumb" src="{{image}}" alt="Author image" nopin="nopin" />
+                {{#if @blog.logo}}
+                    <img class="author-thumb" src="{{@blog.logo}}" alt="Graficos.net" nopin="nopin" />
                 {{/if}}
 
                 <div class="author-info">
-   
-                    published by <a class="link" href="{{url}}">{{name}}</a>
-                    
-                    <br> 
+
+                    by <a class="link" href="{{url}}">{{name}}</a>
+
+                    <br>
 
                     <time datetime="{{date format='YYYY-MM-DD'}}">on {{date format="MMMM DD, YYYY"}}</time>
-      
+
                 </div>
- 
+
             </footer>
-    
+
             {{/author}}
 
         </div>

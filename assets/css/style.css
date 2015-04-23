@@ -28,7 +28,7 @@ h3{
 	margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 641px) {
+@media (max-width: 641px) {
 	h2.title{
 		font-size: 24px;
 		margin-bottom: 30px !important;
@@ -44,6 +44,13 @@ h3{
 .right{
 	text-align: right;
 }
+
+@media (max-width: 641px) {
+	footer .right {
+		text-align: inherit;
+	}
+}
+
 .clear{
 	clear: both;
 }
@@ -64,7 +71,6 @@ h3{
 	margin-left: 20px;
 	cursor: pointer;
 	background: url('../images/logo-header.png') 0 0 no-repeat;
-	
 	transition: all 300ms ease;
 }
 #header .logo:hover{
@@ -82,7 +88,7 @@ h3{
 	font-weight: 600;
 	cursor: pointer;
 }
-@media only screen and (max-width: 641px) {
+@media (max-width: 641px) {
 	#header{
 		display: none;
 	}
@@ -93,12 +99,12 @@ h3{
 	color: #999;
 	text-align: center;
 	line-height: 24px;
-	box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); */
 }
 
 #what .step{
 	margin-bottom: 30px;
-	cursor: pointer;	
+	cursor: pointer;
 }
 #what .step:last-child{
 	margin-bottom: 0px;
@@ -140,7 +146,7 @@ h3{
 #faq .faq:first-child{
 	margin-top: 0;
 }
- 
+
  /*/ --- NEWSLETTER --- /*/
 section#newsletter{
 	height: auto;
@@ -173,7 +179,7 @@ section#newsletter{
 #newsletter form h3{
 	font-size: 18px;
 }
-@media only screen and (max-width: 641px) {
+@media (max-width: 641px) {
 	#newsletter input{
 		margin: 10px 0;
 	}

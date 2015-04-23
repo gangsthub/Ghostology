@@ -1,8 +1,13 @@
-# Ghostology
+# Ghostology-fork
 
-The new material-driven theme for [Ghost](http://github.com/tryghost/ghost/).
 
-To view an example visit [lifeaweso.me](http://lifeaweso.me) and [blog.lifeaweso.me](http://blog.lifeaweso.me).
+This is a fork from a material-driven theme for [Ghost](http://github.com/tryghost/ghost/) called [Ghostology](https://github.com/teqnology/Ghostology).
+
+To view the original in the wild, see [lifeaweso.me](http://lifeaweso.me) and [blog.lifeaweso.me](http://blog.lifeaweso.me).
+
+To view my version, check [blog.graficos.net](http://blog.graficos.net).
+
+:smile:
 
 ## Copyright & License
 

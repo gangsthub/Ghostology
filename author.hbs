@@ -11,17 +11,17 @@
         <div class="row">
             <div class="columns large-12">
 
-                <header class="author-header"><h2 class="title"><a class="link" href="{{url}}">{{{name}}}</a></h2></header>
+                <header class="author-header"><h2 class="title"><a class="link" href="{{url}}">{{{name}}}</a></h2></header><br>
 
                 <footer class="post-footer box">
-                    {{#if image}}
-                        <img class="author-thumb" src="{{image}}" alt="Author image" nopin="nopin" />
-                    {{/if}}
-                    <div class="author-info">
 
-                        {{#if bio}}
-                            <p>{{bio}}</p>
-                        {{/if}}
+                    {{#if @blog.logo}}
+                        <img class="author-thumb" src="{{@blog.logo}}" alt="Graficos.net" nopin="nopin" />
+                    {{/if}}
+
+                    <div class="author-info">
+                        <p>About {{{name}}}</p><br>
+                        <p>{{{bio}}}</p>
 
                         <br>
 
@@ -32,7 +32,7 @@
                         </div>
 
                     </div>
-                    
+
                 </footer>
 
             </div>
