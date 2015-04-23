@@ -5,10 +5,10 @@
 <section id="intro" class="{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
 
     <div class="container">
-
-        {{#if @blog.logo}}
-            <a href="{{@blog.url}}" title="{{@blog.title}}"><img src="{{@blog.logo}}" alt="{{@blog.title}} logo" /></a>
-        {{/if}}
+        {{! wget error here, had to test without if statemenr }}
+        <a href="{{@blog.url}}" title="{{@blog.title}}">
+            <img src="{{@blog.logo}}" alt="{{@blog.title}} logo" />
+        </a>
 
         <div class="container-title">
             <h1 class="page-title">{{@blog.title}}</h1>

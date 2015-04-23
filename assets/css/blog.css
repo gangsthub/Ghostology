@@ -62,6 +62,10 @@ hr {
    color: #50B6B9;
    height: 2px;
 }
+wrapper > hr {
+    width: 50%;
+   margin: 3em auto 1em;
+}
 mark { background: #FF0; color: #000; }
 code, kbd, pre,
 samp { font-family: monospace, serif; font-size: 1em; text-align: left; margin: 1em auto;  border-radius: .5em;}
@@ -754,14 +758,19 @@ body:not(.post-template) .post-title {
     -ms-transition: all 100ms linear;
     transition: all 100ms linear;
 }
+
 .box:hover{
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
+
 section{
     width: 100%;
-    min-height: 100%;
     padding: 5rem 0;
     position: relative;
+}
+
+section#intro, .post-template#what {
+    min-height: 100%;
 }
 
 /* ==========================================================================
