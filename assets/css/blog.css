@@ -71,7 +71,7 @@ code, kbd, pre,
 samp { font-family: monospace, serif; font-size: 1em; text-align: left; margin: 1em auto;  border-radius: .5em;}
 pre { white-space: pre-wrap; }
 pre > code {padding-left: 1em;}
-code {padding: .1em .4em;}
+code {padding: .1em .4em;background-color: #ccc;}
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 small { font-size: 80%; }
 sub, sup {
